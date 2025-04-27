@@ -23,6 +23,8 @@ mongoose
 
 // creating routes
 
+
+// categories for select box 
 const categories = [
   "vegetable",
   "fruit",
