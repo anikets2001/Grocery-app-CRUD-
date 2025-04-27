@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detials page</title>
+  </head>
+  <body>
+    <h1>Details page</h1>
+    <div style="display: flex; align-items: center; gap: 16px;">
+    <h2><%=product.name%></h2><a href="/products/<%=product._id%>/edit">Edit</a> 
+
+    <form action="/products/<%=product._id%>?_method=DELETE" method="POST">
+   <button>Delete</button>
+    </form>
+
+    </div>
+    <div>
+      <ul>
+        <li>
+          ₹<%=product.price%> </b>
+        </li>
+         <li><%=product.category%></li>
+      </ul>
+    </div>
+    <a href="/">All Products</a>
+  </body>
+</html>
